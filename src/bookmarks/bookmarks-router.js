@@ -10,6 +10,9 @@ const bodyParser = express.json();
 bookmarksRouter
   .route("/bookmarks")
   .get((req, res) => {
+    if (bookmarks.length === 0) {
+      return res.status(200).send("There are currently no bookmarks.");
+    }
     res.json(bookmarks);
   })
   .post(bodyParser, (req, res) => {
@@ -17,23 +20,23 @@ bookmarksRouter
 
     if (!title) {
       logger.error("Title is required");
-      res.status(400).send("Please enter valid bookmark title.");
+      return res.status(400).send("Please enter valid bookmark title.");
     }
     if (!url) {
       logger.error("Url is required");
-      res.status(400).send("Please enter a valid bookmark url.");
+      return res.status(400).send("Please enter a valid bookmark url.");
     }
     if (!validUrl.isUri(url)) {
       logger.error("Url is invalid");
-      res.status(400).send("Please enter a valid url.");
+      return res.status(400).send("Please enter a valid url.");
     }
     if (!description) {
       logger.error("Description is required");
-      res.status(400).send("Please enter a valid bookmark description");
+      return res.status(400).send("Please enter a valid bookmark description");
     }
     if (!rating) {
       logger.error("Rating is required");
-      res.status(400).send("Please enter a valid bookmark rating.");
+      return res.status(400).send("Please enter a valid bookmark rating.");
     }
 
     const id = uuid();
@@ -60,32 +63,25 @@ bookmarksRouter
   .route("/bookmarks/:id")
   .get((req, res) => {
     const { id } = req.params;
-    const bookmark = bookmarks.filter((bm) => bm.id === id);
+    const bookmark = bookmarks.find((bm) => bm.id === id);
 
-    if (bookmark.length === 0) {
+    if (!bookmark) {
       logger.error(`No bookmark found with id ${id}`);
-      res.status(404).send("Bookmark not found.");
+      return res.status(404).send("Bookmark not found.");
     }
     res.json(bookmark);
   })
   .delete((req, res) => {
     const { id } = req.params;
 
-    const bookmark = bookmarks.filter((bm) => {
-      bm.id === id;
-    });
-
-    if (bookmark.length === 0) {
+    const bookmarkIndex = bookmarks.findIndex((bm) => bm.id === id);
+    console.log(bookmarkIndex);
+    if (bookmarkIndex === -1) {
       logger.error(`Bookmark with id ${id} not found.`);
-      res.status(404).send("Not found");
+      return res.status(404).send("Not found");
     }
 
-    for (let i = 0; i < bookmarks.length; i++) {
-      if (bookmarks[i].id === id) {
-        bookmarks.splice(i, 1);
-      }
-    }
-
+    bookmarks.splice(bookmarkIndex, 1);
     logger.info(`Card with id ${id} deleted.`);
     res.status(204).end();
   });

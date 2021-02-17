@@ -15,3 +15,50 @@
 {"message":"Bookmark with id 9ea82db4-ee29-4b1e-8318-2505622c3d66 created.","level":"info"}
 {"message":"Card with id 9ea82db4-ee29-4b1e-8318-2505622c3d66 not found.","level":"error"}
 {"message":"Card with id 9ea82db4-ee29-4b1e-8318-2505622c3d66 not found.","level":"error"}
+{"message":"Bookmark with id 30d2537a-7388-41e1-86f0-da6aa174433c created.","level":"info"}
+{"message":"Bookmark with id 30d2537a-7388-41e1-86f0-da6aa174433c not found.","level":"error"}
+{"message":"Card with id 30d2537a-7388-41e1-86f0-da6aa174433c deleted.","level":"info"}
+{"message":"No bookmark found with id 30d2537a-7388-41e1-86f0-da6aa174433c","level":"error"}
+{"message":"No bookmark found with id 87fn36vd9djdf","level":"error"}
+{"message":"Bookmark with id 87fn36vd9djd not found.","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Bookmark with id 87fn36vd9djd not found.","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Bookmark with id 87fn36vd9djd not found.","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Bookmark with id 87fn36vd9djd not found.","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Bookmark with id 87fn36vd9djd not found.","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Bookmark with id 8sdfbvbs65sd not found.","level":"error"}
+{"message":"Card with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"Bookmark with id 8sdfbvbs65sd not found.","level":"error"}
+{"message":"Card with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"Bookmark with id 87fn36vd9djd not found.","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"No bookmark found with id 87fn36vd9djd","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Bookmark with id 87fn36vd9djd not found.","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"No bookmark found with id 87fn36vd9djd","level":"error"}
+{"message":"Bookmark with id 71bb2a04-3cd5-47fd-981b-8aebeeabf3c6 created.","level":"info"}
+{"message":"Card with id 71bb2a04-3cd5-47fd-981b-8aebeeabf3c6 deleted.","level":"info"}
+{"message":"Card with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"Bookmark with id 8sdfbvbs65sd not found.","level":"error"}
+{"message":"Card with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Bookmark with id 87fn36vd9djd not found.","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"Bookmark with id 54d458f1-7389-4933-8447-d29d22de99e3 created.","level":"info"}
+{"message":"Card with id 54d458f1-7389-4933-8447-d29d22de99e3 deleted.","level":"info"}
+{"message":"Bookmark with id 54d458f1-7389-4933-8447-d29d22de99e3 not found.","level":"error"}
+{"message":"No bookmark found with id 54d458f1-7389-4933-8447-d29d22de99e3","level":"error"}
+{"message":"Card with id 87fn36vd9djd deleted.","level":"info"}
+{"message":"No bookmark found with id 87fn36vd9djd","level":"error"}
+{"message":"Card with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/","level":"error"}
