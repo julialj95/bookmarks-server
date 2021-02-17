@@ -1,2 +1,17 @@
 {"message":"Bookmark with id f0ae9497-2902-4ba5-a693-246ac194715f created.","level":"info"}
 {"message":"Card with id f0ae9497-2902-4ba5-a693-246ac194715f deleted.","level":"info"}
+{"message":"Card with id f0ae9497-2902-4ba5-a693-246ac194715f deleted.","level":"info"}
+{"message":"Url is invalid","level":"error"}
+{"message":"Description is required","level":"error"}
+{"message":"Url is invalid","level":"error"}
+{"message":"Description is required","level":"error"}
+{"message":"Description is required","level":"error"}
+{"message":"Bookmark with id 5e147d93-0b96-4321-8453-eff8f6450b38 created.","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/","level":"error"}
+{"message":"Card with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"Card with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"Card with id 8sdfbvbs65sd deleted.","level":"info"}
+{"message":"No bookmark found with id 8sdfbvbs65sd","level":"error"}
+{"message":"Bookmark with id 9ea82db4-ee29-4b1e-8318-2505622c3d66 created.","level":"info"}
+{"message":"Card with id 9ea82db4-ee29-4b1e-8318-2505622c3d66 not found.","level":"error"}
+{"message":"Card with id 9ea82db4-ee29-4b1e-8318-2505622c3d66 not found.","level":"error"}

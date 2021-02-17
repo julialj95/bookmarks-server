@@ -1,6 +1,7 @@
 const express = require("express");
 const { v4: uuid } = require("uuid");
 const logger = require("../logger.js");
+const validUrl = require("valid-url");
 const { bookmarks } = require("../store.js");
 
 const bookmarksRouter = express.Router();
@@ -12,7 +13,7 @@ bookmarksRouter
     res.json(bookmarks);
   })
   .post(bodyParser, (req, res) => {
-    const { title, url, desc, rating } = req.body;
+    const { title, url, description, rating } = req.body;
 
     if (!title) {
       logger.error("Title is required");
@@ -22,7 +23,11 @@ bookmarksRouter
       logger.error("Url is required");
       res.status(400).send("Please enter a valid bookmark url.");
     }
-    if (!desc) {
+    if (!validUrl.isUri(url)) {
+      logger.error("Url is invalid");
+      res.status(400).send("Please enter a valid url.");
+    }
+    if (!description) {
       logger.error("Description is required");
       res.status(400).send("Please enter a valid bookmark description");
     }
@@ -37,7 +42,7 @@ bookmarksRouter
       id,
       title,
       url,
-      desc,
+      description,
       rating,
     };
 
@@ -57,7 +62,7 @@ bookmarksRouter
     const { id } = req.params;
     const bookmark = bookmarks.filter((bm) => bm.id === id);
 
-    if (!bookmark) {
+    if (bookmark.length === 0) {
       logger.error(`No bookmark found with id ${id}`);
       res.status(404).send("Bookmark not found.");
     }
@@ -70,9 +75,9 @@ bookmarksRouter
       bm.id === id;
     });
 
-    if (!bookmark) {
-      logger.error(`Card with id ${id} not found.`);
-      return res.status(404).send("Not found");
+    if (bookmark.length === 0) {
+      logger.error(`Bookmark with id ${id} not found.`);
+      res.status(404).send("Not found");
     }
 
     for (let i = 0; i < bookmarks.length; i++) {
