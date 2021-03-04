@@ -3,6 +3,7 @@ const { v4: uuid } = require("uuid");
 const logger = require("../logger.js");
 const validUrl = require("valid-url");
 const { bookmarks } = require("../store.js");
+const { ConsoleTransportOptions } = require("winston/lib/winston/transports");
 
 const bookmarksRouter = express.Router();
 const bodyParser = express.json();
@@ -75,7 +76,7 @@ bookmarksRouter
     const { id } = req.params;
 
     const bookmarkIndex = bookmarks.findIndex((bm) => bm.id === id);
-    console.log(bookmarkIndex);
+
     if (bookmarkIndex === -1) {
       logger.error(`Bookmark with id ${id} not found.`);
       return res.status(404).send("Not found");
