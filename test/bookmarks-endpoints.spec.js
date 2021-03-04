@@ -2,7 +2,7 @@ const { expect } = require("chai");
 const knex = require("knex");
 const supertest = require("supertest");
 const app = require("../src/app");
-const { makeBookmarksArray } = require("./bookmarks-fixtures");
+const makeBookmarksArray = require("./bookmarks-fixtures");
 
 describe.only("Bookmarks endpoints", () => {
   let db;
@@ -18,7 +18,7 @@ describe.only("Bookmarks endpoints", () => {
 
   after("disconnect from db", () => db.destroy());
 
-  beforeEach("clean the table", () => db("bookmarks").truncate());
+  before("clean the table", () => db("bookmarks").truncate());
 
   afterEach("cleanup", () => db("bookmarks").truncate());
 
