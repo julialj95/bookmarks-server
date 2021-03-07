@@ -12,8 +12,8 @@ const BookmarksService = {
       .into("bookmarks")
       .insert(newBookmark)
       .returning("*")
-      .then(() => {
-        // return response[0];
+      .then((response) => {
+        return response[0];
       });
   },
 

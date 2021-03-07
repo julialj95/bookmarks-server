@@ -67,8 +67,8 @@ bookmarksRouter
         });
       }
     }
-
-    BookmarksService.insertBookmark(req.app.get("db"), newBookmark)
+    const knexInstance = req.app.get("db");
+    BookmarksService.insertBookmark(knexInstance, newBookmark)
       .then((bookmark) => {
         logger.info(`Bookmark with id ${bookmark.id} created.`);
         res
