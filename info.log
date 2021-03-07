@@ -75,3 +75,43 @@
 {"message":"Unauthorized request to path: /bookmark/2","level":"error"}
 {"message":"Unauthorized request to path: /","level":"error"}
 {"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Url is invalid","level":"error"}
+{"message":"Url is invalid","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/2","level":"error"}
+{"message":"Unauthorized request to path: /bookmarks/2","level":"error"}
+{"message":"Cannot read property 'insert' of undefined","level":"error"}
+{"message":"Converting circular structure to JSON\n    --> starting at object with constructor 'Timeout'\n    |     property '_idlePrev' -> object with constructor 'TimersList'\n    --- property '_idleNext' closes the circle","level":"error"}
+{"message":"Converting circular structure to JSON\n    --> starting at object with constructor 'Timeout'\n    |     property '_idlePrev' -> object with constructor 'TimersList'\n    --- property '_idleNext' closes the circle","level":"error"}
+{"message":"Converting circular structure to JSON\n    --> starting at object with constructor 'Timeout'\n    |     property '_idlePrev' -> object with constructor 'TimersList'\n    --- property '_idleNext' closes the circle","level":"error"}
+{"message":"Cannot read property 'insert' of undefined","level":"error"}
+{"message":"Converting circular structure to JSON\n    --> starting at object with constructor 'Timeout'\n    |     property '_idlePrev' -> object with constructor 'TimersList'\n    --- property '_idleNext' closes the circle","level":"error"}
+{"message":"Converting circular structure to JSON\n    --> starting at object with constructor 'Timeout'\n    |     property '_idlePrev' -> object with constructor 'TimersList'\n    --- property '_idleNext' closes the circle","level":"error"}
+{"message":"Converting circular structure to JSON\n    --> starting at object with constructor 'Timeout'\n    |     property '_idlePrev' -> object with constructor 'TimersList'\n    --- property '_idleNext' closes the circle","level":"error"}
+{"message":"Cannot read property 'insert' of undefined","level":"error"}
+{"message":"Converting circular structure to JSON\n    --> starting at object with constructor 'Timeout'\n    |     property '_idlePrev' -> object with constructor 'TimersList'\n    --- property '_idleNext' closes the circle","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"id is not defined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"knex(...).where(...).delete(...).end is not a function","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"knex(...).where(...).delete(...).end is not a function","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"knex(...).where(...).delete(...).done is not a function","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"knex is not a function","level":"error"}
+{"message":"Cannot read property 'insert' of undefined","level":"error"}
+{"message":"knex is not a function","level":"error"}
+{"message":"knex is not a function","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}

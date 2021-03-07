@@ -4,7 +4,7 @@ const supertest = require("supertest");
 const app = require("../src/app");
 const makeBookmarksArray = require("./bookmarks-fixtures");
 
-describe.only("Bookmarks endpoints", () => {
+describe("Bookmarks endpoints", () => {
   let db;
 
   before("make knex instance", () => {
@@ -53,6 +53,53 @@ describe.only("Bookmarks endpoints", () => {
         return supertest(app)
           .get(`/bookmarks/${bookmarkId}`)
           .expect(200, expectedBookmark);
+      });
+    });
+  });
+
+  describe("POST /bookmarks", () => {
+    context("It creates a new bookmark and responds with 201", () => {
+      const bookmarksArray = makeBookmarksArray();
+      const newBookmark = bookmarksArray[0];
+
+      return supertest(app)
+        .post("/bookmarks")
+        .send(newBookmark)
+        .expect((response) => {
+          expect(response.body.title).to.eql(newBookmark.title);
+          expect(response.body.url).to.eql(newBookmark.url);
+          expect(response.body.description).to.eql(newBookmark.description);
+          expect(response.body.rating).to.eql(newBookmark.rating);
+          expect(response.body).to.have.property("id");
+          expect(response.headers.location).to.eql(
+            `/bookmarks/${response.body.id}`
+          );
+        })
+        .then((postRes) => {
+          return supertest(app)
+            .get(`/bookmarks/${postRes.body.id}`)
+            .expect(postRes.body);
+        });
+    });
+  });
+  describe("DELETE /bookmarks", () => {
+    context("Given there are bookmarks in the database", () => {
+      const testBookmarks = makeBookmarksArray();
+      beforeEach("insert bookmarks", () => {
+        return db.into("bookmarks").insert(testBookmarks);
+      });
+
+      it("responds with 204 and removes the bookmark", () => {
+        const idToRemove = 2;
+        const expectedBookmarks = testBookmarks.filter(
+          (bookmark) => bookmark.id !== idToRemove
+        );
+        return supertest(app)
+          .delete(`/bookmarks/${idToRemove}`)
+          .expect(204)
+          .then(() =>
+            supertest(app).get("/bookmarks").expect(expectedBookmarks)
+          );
       });
     });
   });
