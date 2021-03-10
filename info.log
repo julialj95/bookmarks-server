@@ -123,3 +123,42 @@
 {"message":"Invalid rating '7' supplied","level":"error"}
 {"message":"title is required","level":"error"}
 {"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot destructure property 'title' of 'req.body' as it is undefined.","level":"error"}
+{"message":"Cannot destructure property 'title' of 'req.body' as it is undefined.","level":"error"}
+{"message":"Cannot destructure property 'title' of 'req.body' as it is undefined.","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"next is not defined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"next is not defined","level":"error"}
+{"message":"next is not defined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Cannot read property 'into' of undefined","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
+{"message":"Empty .update() call detected! Update data does not contain any values to update. This will result in a faulty query. Table: bookmarks. Columns: title,url,description,rating.","level":"error"}
